@@ -21,3 +21,34 @@ Investigating raw read counts
 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##  180700  226100  264200  249900  275000  293000
+
+### Questions
+
+1.  Does the numbers reflect similar HiSeq / MiSeq runs?
+
+Investigating FastQC plots
+--------------------------
+
+Summary of FastQC reports are
+[here](http://web.cbio.uct.ac.za/~gerrit/16Snodeassessment/assessment.run/qc/fastqc/fastqc_plots.htm)
+
+### Questions
+
+1.  Does the 52% GC content reflect microbial samples?
+2.  Does the graphs show what is expected.
+
+-   Differences in forward and reverse read qualities. ![optional
+    caption text](figures/r1_qual.png) ![optional caption
+    text](figures/r2_qual.png)
+-   Is there anything to be worried about the per tile quality heatmap
+    plot? ![optional caption
+    text](figures/per_tile_sequence_quality.png)
+-   A very mixed per base sequence content distribution. ![optional
+    caption text](figures/per_base_sequence_content.png)
+-   High duplication levels. ![optional caption
+    text](figures/duplication_levels.png)
+-   High levels of overrepresentation of sequences. ![optional caption
+    text](figures/overrepressented_sequences.png)
+
+1.  Read lengths are 300bp. Is this normal to expect form MiSeq runs?
+    How should we set our filtering (done after merging) based on this.
