@@ -1,0 +1,28 @@
+---
+title: "Assessment data analysis Analysis"
+author: "Gerrit Botha"
+date: "27 February 2017"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Investigating raw read counts
+```{r, include=FALSE}
+assesment.raw.fastq.counts <- read.table(file = "assessment.run/qc/extra/raw.fastq.counts", sep = '\t', header = FALSE)
+names(assesment.raw.fastq.counts) <- c("Samples_ID","Fwd_read_count","Rev_read_count")
+assesment.raw.fastq.counts$Total_count <- assesment.raw.fastq.counts$Fwd_read_count + assesment.raw.fastq.counts$Rev_read_count
+```
+
+
+```{r cars, echo=FALSE}
+assesment.raw.fastq.counts
+```
+
+
+```{r}
+summary(assesment.raw.fastq.counts$Total_count)
+```
+
