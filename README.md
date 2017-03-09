@@ -52,3 +52,5 @@ Summary of FastQC reports are
 
 1.  Read lengths are 300bp. Is this normal to expect form MiSeq runs?
     How should we set our filtering (done after merging) based on this.
+2.  Which variable region does our reads hit? Does it make sense in
+    terms of the sequence technology/platform used?
